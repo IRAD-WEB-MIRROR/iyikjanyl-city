@@ -1,36 +1,42 @@
-BODY { background: #efe3c2 url(images/parchment.gif); font-family: "Times New Roman", Times, serif; font-size: 16px; color: #2a1c08; margin: 8px; }
-A:link { color: #0000cc; }
-A:visited { color: #663399; }
-A:hover { color: #cc0000; }
-TABLE.page { width: 780px; max-width: 100%; background: #fffaf0; border: 3px double #7a5a24; }
-TD.banner { background: #4a3418; padding: 0; text-align: center; }
-TD.banner IMG { display: block; width: 100%; height: auto; }
-TD.nav { width: 170px; background: #e8d7a8; border-right: 2px groove #b89b5a; vertical-align: top; font-family: Arial, Helvetica, sans-serif; font-size: 13px; padding: 8px 6px; }
-TD.nav A { display: block; padding: 3px 2px; font-weight: bold; }
-TD.nav A:before { content: "\00BB  "; color: #a0781c; }
-TD.nav .box { border: 1px solid #a0781c; background: #fff8e0; padding: 5px; margin-top: 12px; font-size: 11px; text-align: center; }
-TD.body { vertical-align: top; padding: 10px 16px; }
-H1 { font-size: 26px; color: #6b1a1a; text-align: center; font-style: italic; margin: 6px 0 4px; }
-H2 { font-size: 19px; color: #6b1a1a; border-bottom: 1px solid #c8a85a; margin: 18px 0 6px; }
-HR { border: 0; height: 3px; background: #c8a85a; margin: 12px 0; }
-.new { color: #ff0000; font-weight: bold; font-family: Arial, sans-serif; font-size: 11px; animation: blink 1s steps(2) infinite; }
-@keyframes blink { 50% { visibility: hidden; } }
-.small { font-size: 12px; color: #6a5a40; }
+/* City Hall of Iyik Janyl - main stylesheet (Naryn Web Studio, 2008) */
+body { margin: 0; padding: 20px 0; background: #6b4f2a linear-gradient(#8a6a3c, #4f391c 600px) no-repeat; background-color: #4f391c; font: 12px/1.6 "Trebuchet MS", Verdana, Arial, sans-serif; color: #33291a; }
+a { color: #1d5a8c; text-decoration: none; }
+a:hover { color: #b0321e; text-decoration: underline; }
+#wrapper { width: 780px; max-width: 100%; margin: 0 auto; background: #fdfaf2; border-radius: 8px; overflow: hidden; box-shadow: 0 0 18px rgba(0,0,0,.55); }
+#header img { display: block; width: 100%; height: auto; }
+#menu { background: linear-gradient(#f3e3b5 0%, #e2c97f 50%, #d4b562 51%, #e8d391 100%); border-top: 1px solid #fff4d0; border-bottom: 1px solid #a8893c; padding: 0 6px; font-size: 0; }
+#menu a { display: inline-block; font: bold 12px "Trebuchet MS", Arial, sans-serif; color: #4a3418; padding: 8px 11px; text-shadow: 0 1px 0 #fff4d0; border-right: 1px solid rgba(120,90,30,.25); }
+#menu a:hover, #menu a.current { background: linear-gradient(#7a1f1f, #a3221f); color: #fff; text-shadow: none; text-decoration: none; }
+#cols { padding: 16px; }
+#content { float: left; width: 530px; }
+#sidebar { float: right; width: 200px; }
+.clear { clear: both; }
+h1 { font: normal 24px Georgia, "Times New Roman", serif; color: #7a1f1f; margin: 0 0 10px; padding-bottom: 6px; border-bottom: 1px dashed #c8a85a; }
+h2 { font: bold 15px Georgia, serif; color: #7a1f1f; margin: 18px 0 6px; }
+.box { background: #fff; border: 1px solid #dccb9e; border-radius: 6px; margin-bottom: 14px; overflow: hidden; }
+.box h3 { margin: 0; padding: 5px 9px; font: bold 12px "Trebuchet MS", sans-serif; color: #fff; background: linear-gradient(#a3221f, #7a1f1f); text-shadow: 0 -1px 0 #4a0f0f; }
+.box .in { padding: 8px 9px; font-size: 11px; }
+.box ul { margin: 0; padding-left: 16px; }
+.box p { margin: 0 0 6px; }
+.box img.arms { float: right; margin: 0 0 4px 6px; }
+.badge { display: inline-block; background: #e06b00; color: #fff; font: bold 9px Verdana, sans-serif; padding: 1px 4px; border-radius: 3px; text-transform: uppercase; vertical-align: 1px; }
+.small { font-size: 11px; color: #7a6a50; }
 .center { text-align: center; }
-.counter { font-family: "Courier New", monospace; background: #000; color: #ffcc00; padding: 2px 6px; letter-spacing: 3px; font-weight: bold; }
-.photo { border: 2px solid #4a3418; }
-TABLE.data { border-collapse: collapse; width: 100%; font-size: 14px; }
-TABLE.data TD, TABLE.data TH { border: 1px solid #a0781c; padding: 4px 6px; vertical-align: top; }
-TABLE.data TH { background: #e8d7a8; }
-.gb { border: 1px solid #c8a85a; background: #fff; margin: 8px 0; padding: 6px 8px; font-size: 14px; }
-.gb B { color: #6b1a1a; }
-.uc { border: 2px dashed #cc9900; background: #fffbe8; padding: 8px; text-align: center; font-family: Arial, sans-serif; font-size: 13px; }
-MARQUEE { font-family: Arial, sans-serif; font-size: 13px; color: #6b1a1a; background: #f5ebcc; border-top: 1px solid #c8a85a; border-bottom: 1px solid #c8a85a; padding: 2px 0; }
-@media (max-width: 700px) {
-  BODY { margin: 0; }
-  TABLE.page, TABLE.page TBODY, TABLE.page TR, TABLE.page TD { display: block; width: auto !important; }
-  TD.nav { border-right: 0; border-bottom: 2px groove #b89b5a; }
-  TD.nav A { display: inline-block; margin-right: 8px; }
-  TD.nav .box { display: none; }
-  IMG.photo { max-width: 100%; height: auto; }
+.photo { border: 1px solid #c8a85a; padding: 3px; background: #fff; box-shadow: 2px 2px 4px rgba(0,0,0,.2); max-width: 100%; height: auto; }
+img[align=right] { float: right; margin: 0 0 8px 12px; }
+table.data { border-collapse: collapse; width: 100%; font-size: 12px; }
+table.data td, table.data th { border: 1px solid #dccb9e; padding: 5px 7px; vertical-align: top; }
+table.data th { background: #f3e3b5; text-align: left; }
+table.data tr:nth-child(even) td { background: #fbf5e4; }
+.gb { border-left: 4px solid #d4b562; background: #fff; margin: 8px 0; padding: 6px 10px; }
+.gb b { color: #7a1f1f; }
+.uc { border: 1px solid #e6c35c; background: #fff8d8; padding: 8px 10px; border-radius: 5px; }
+.rss { background: #f78a1d; color: #fff; font: bold 9px Verdana; padding: 1px 4px; border-radius: 2px; }
+#footer { background: #efe4c6; border-top: 1px solid #dccb9e; padding: 10px 16px; font-size: 10px; color: #6a5a40; text-align: center; }
+@media (max-width: 800px) {
+  body { padding: 0; }
+  #wrapper { border-radius: 0; }
+  #content, #sidebar { float: none; width: auto; }
+  #menu a { padding: 7px 8px; }
+  img[align=right] { float: none; display: block; margin: 0 0 8px; }
 }

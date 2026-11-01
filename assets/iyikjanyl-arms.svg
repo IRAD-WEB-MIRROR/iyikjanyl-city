@@ -1,14 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" width="120" height="140">
-<path d="M8 6 H112 V78 C112 108 88 128 60 136 C32 128 8 108 8 78 Z" fill="#d6b254" stroke="#4a3418" stroke-width="3"/>
-<!-- church with dome and cross -->
-<g fill="#2e6b4f" stroke="#1c3a2a" stroke-width="1.2">
-<rect x="36" y="58" width="48" height="34"/>
-<path d="M44 58 C44 38 76 38 76 58 Z"/>
-<rect x="57" y="22" width="6" height="18" fill="#7a1f1f" stroke="#3a0a0a"/>
-<rect x="52" y="27" width="16" height="5" fill="#7a1f1f" stroke="#3a0a0a"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 250" width="200" height="250">
+<title>Coat of arms of Iyık Janyl</title>
+<defs>
+<clipPath id="sh"><path d="M34 40 H166 V150 A66 66 0 0 1 34 150 Z"/></clipPath>
+<linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2d27a"/><stop offset="1" stop-color="#c4952a"/></linearGradient>
+</defs>
+<!-- juniper branches behind the shield -->
+<g fill="#3f6b3a" stroke="#1f3a1d" stroke-width=".8">
+<path d="M40 222 C20 190 16 150 26 110 C34 150 40 186 56 214 Z"/>
+<path d="M160 222 C180 190 184 150 174 110 C166 150 160 186 144 214 Z"/>
+<g id="lf"><ellipse cx="24" cy="130" rx="4" ry="10" transform="rotate(-25 24 130)"/><ellipse cx="22" cy="160" rx="4" ry="10" transform="rotate(-20 22 160)"/><ellipse cx="30" cy="188" rx="4" ry="10" transform="rotate(-35 30 188)"/></g>
+<use xlink:href="#lf" transform="translate(200 0) scale(-1 1)"/>
 </g>
-<path d="M54 92 V78 a6 6 0 0 1 12 0 V92 Z" fill="#d6b254"/>
+<!-- shield -->
+<g clip-path="url(#sh)">
+<rect x="30" y="36" width="140" height="190" fill="#2a5aa6"/>
+<!-- gold chief with the eight-pointed star of the Feast -->
+<rect x="30" y="36" width="140" height="26" fill="url(#gold)"/>
+<g transform="translate(100 49) scale(.8)" fill="#a3221f"><path d="M0 -13 L3.5 -4 L13 0 L3.5 4 L0 13 L-3.5 4 L-13 0 L-3.5 -4 Z"/><path d="M0 -13 L3.5 -4 L13 0 L3.5 4 L0 13 L-3.5 4 L-13 0 L-3.5 -4 Z" transform="rotate(45)"/></g>
+<!-- green Cathedral Hill -->
+<path d="M30 168 C60 140 80 132 100 132 C120 132 140 140 170 168 V230 H30 Z" fill="#3f7a46" stroke="#1f3a1d" stroke-width="1.2"/>
+<!-- church of silver with green dome and gold cross -->
+<g stroke="#4a4a4a" stroke-width="1.2">
+<rect x="76" y="104" width="48" height="34" fill="#f4efe2"/>
+<rect x="70" y="114" width="10" height="24" fill="#f4efe2"/><rect x="120" y="114" width="10" height="24" fill="#f4efe2"/>
+<rect x="88" y="94" width="24" height="12" fill="#f4efe2"/>
+<path d="M86 94 C86 74 114 74 114 94 Z" fill="#2f8a6a"/>
+<path d="M95 124 V138 H105 V124 A5 5 0 0 0 95 124 Z" fill="#2a5aa6"/>
+</g>
+<g fill="url(#gold)" stroke="#6b4e10" stroke-width=".8"><rect x="98.5" y="64" width="3" height="16"/><rect x="94" y="68" width="12" height="3"/></g>
 <!-- the Naryn -->
-<path d="M14 104 C24 98 32 110 42 104 S60 98 70 104 S88 110 106 104" fill="none" stroke="#2a5f9e" stroke-width="5"/>
-<path d="M24 116 C32 111 38 121 48 116 S64 111 72 116 S86 121 96 116" fill="none" stroke="#2a5f9e" stroke-width="4"/>
+<g fill="none" stroke-width="7">
+<path d="M28 186 C42 178 56 194 70 186 S98 178 112 186 S140 194 154 186 S170 180 176 186" stroke="#f4efe2"/>
+<path d="M28 202 C42 194 56 210 70 202 S98 194 112 202 S140 210 154 202 S170 196 176 202" stroke="#2a5aa6"/>
+</g>
+</g>
+<path d="M34 40 H166 V150 A66 66 0 0 1 34 150 Z" fill="none" stroke="#5c4010" stroke-width="4"/>
+<!-- gold crown with a cross: the holy city -->
+<g fill="url(#gold)" stroke="#5c4010" stroke-width="1.4" stroke-linejoin="round">
+<path d="M58 36 L54 14 L72 24 L86 8 L100 22 L114 8 L128 24 L146 14 L142 36 Z"/>
+<rect x="97" y="0" width="6" height="12"/><rect x="93" y="3" width="14" height="4"/>
+</g>
+<g fill="#a3221f"><circle cx="72" cy="28" r="2.6"/><circle cx="100" cy="29" r="3"/><circle cx="128" cy="28" r="2.6"/></g>
+<!-- ribbon -->
+<path d="M30 222 Q100 246 170 222 L176 238 Q100 262 24 238 Z" fill="#a3221f" stroke="#5c4010" stroke-width="1.5"/>
+<text x="100" y="240" text-anchor="middle" font-family="'Times New Roman',Times,serif" font-weight="bold" font-size="13" fill="#f2d27a" letter-spacing="2">IYIK JANYL · 1727</text>
 </svg>
