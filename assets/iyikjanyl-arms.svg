@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" width="120" height="140">
+<path d="M8 6 H112 V78 C112 108 88 128 60 136 C32 128 8 108 8 78 Z" fill="#d6b254" stroke="#4a3418" stroke-width="3"/>
+<!-- church with dome and cross -->
+<g fill="#2e6b4f" stroke="#1c3a2a" stroke-width="1.2">
+<rect x="36" y="58" width="48" height="34"/>
+<path d="M44 58 C44 38 76 38 76 58 Z"/>
+<rect x="57" y="22" width="6" height="18" fill="#7a1f1f" stroke="#3a0a0a"/>
+<rect x="52" y="27" width="16" height="5" fill="#7a1f1f" stroke="#3a0a0a"/>
+</g>
+<path d="M54 92 V78 a6 6 0 0 1 12 0 V92 Z" fill="#d6b254"/>
+<!-- the Naryn -->
+<path d="M14 104 C24 98 32 110 42 104 S60 98 70 104 S88 110 106 104" fill="none" stroke="#2a5f9e" stroke-width="5"/>
+<path d="M24 116 C32 111 38 121 48 116 S64 111 72 116 S86 121 96 116" fill="none" stroke="#2a5f9e" stroke-width="4"/>
+</svg>
