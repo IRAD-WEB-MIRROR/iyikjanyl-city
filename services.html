@@ -43,6 +43,23 @@
 <tr><td>Chong-Say</td><td>Mon, Thu</td><td>14:00 - 17:00</td></tr>
 </table>
 <p class="small">Summer timetable, valid from 3 June 2026. Winter timetable will be published here.</p>
+<table class="data" id="when"><tr><th colspan="2">When does the tanker come? / Rubbish day</th></tr>
+<tr><td>Your quarter:</td><td><select id="q"><option value="kj">Kara-Jar</option><option value="tk">Tash-Kyya</option><option value="cs">Chong-Say</option><option value="lt">Lower Town</option><option value="ch">Cathedral Hill</option><option value="sk">Shahr-i Khunuk</option></select> <input type="button" value="Show" onclick="ijWhen()"></td></tr>
+<tr><td colspan="2" id="whenr">&nbsp;</td></tr></table>
+<script type="text/javascript">
+// tanker and rubbish days (Decisions No. 112 of 29.05.2026 and No. 212 of 27.10.2026)
+var dn=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var ts={kj:[[1,3,5],"8:00-12:00"],tk:[[2,4,6],"8:00-12:00"],cs:[[1,4],"14:00-17:00"]};
+var tw={kj:[[1,4],"9:00-12:00"],tk:[[2,5],"9:00-12:00"],cs:[[3],"9:00-12:00"]};
+var rb={lt:[1,2,3,4,5,6],ch:[2,5],sk:[3]};
+function nextDay(days,from){for(var i=0;i<8;i++){var d=new Date(from.getTime()+i*86400000);for(var j=0;j<days.length;j++)if(d.getDay()==days[j])return d;}return null;}
+function ijWhen(){var q=document.getElementById("q").value,now=new Date(),m=now.getMonth(),dd=now.getDate(),t,d,r;
+var winter=(m>10||m<5||(m==10&&dd>=2)||(m==5&&dd<3));
+if(ts[q]){t=(winter?tw:ts)[q];d=nextDay(t[0],new Date(now.getTime()+(now.getHours()>=parseInt(t[1].split("-")[1],10)?86400000:0)));
+r="<b>Water tanker: "+(d.toDateString()==now.toDateString()?"today":dn[d.getDay()]+" "+d.getDate()+"."+(d.getMonth()+1))+", "+t[1]+"</b><br />"+(winter?"Winter":"Summer")+" timetable. Bring your own containers. If the road is iced, the tanker waits at the end of the paved road.<br />Also: rubbish containers at the end of the paved road.";}
+else{d=nextDay(rb[q],new Date(now.getTime()+(now.getHours()>=9?86400000:0)));r="<b>Rubbish collection: "+(d.toDateString()==now.toDateString()?"today":dn[d.getDay()]+" "+d.getDate()+"."+(d.getMonth()+1))+", before 9:00</b><br />Your quarter has water mains (Talas Suu). Water Service: tel. 5-14-02.";}
+document.getElementById("whenr").innerHTML=r;}
+</script>
 <h2>Mudflow Warning</h2>
 <p>In spring and after heavy rain, mudflows can come down the slopes above the southern districts and the Naryn. <b>Long siren = leave your house and go down to the road.</b> Do not go back for things. Remember Tash-Kyya, 2019.</p>
 <p>Since October 2026 the City Hall takes part, as an associate member, in the technical work of the <b>Urban Resilience Coalition of Central Asia</b> on mudflows, floods and heating readiness.</p>
